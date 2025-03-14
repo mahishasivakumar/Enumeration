@@ -2,7 +2,10 @@
 Enumeration Techniques
 
 # Explore Google hacking and enumeration 
-
+```
+Developed by:Mahisha S
+Register no:212222040095
+```
 # AIM:
 
 To use Google for gathering information and perform enumeration of targets
@@ -26,7 +29,7 @@ Open terminal and try execute some kali linux commands
 Following Categories of pen test tools are identified:
 Information Gathering.
 
-Google Hacking:
+## Google Hacking:
 
 Google hacking, also known as Google dorking, is a technique that involves using advanced operators to perform targeted searches on Google. These operators can be used to search for specific types of information, such as sensitive data that may have been inadvertently exposed on the web. Here are some advanced operators that can be used for Google hacking:
 
@@ -50,16 +53,15 @@ link: This operator allows you to search for pages that link to a specific URL. 
 cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
 
  
-#DNS Enumeration
+# DNS Enumeration
 
 
-##DNS Recon
+## DNS Recon
 provides the ability to perform:
 Check all NS records for zone transfers
 Enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF , TXT)
 Perform common SRV Record Enumeration
 Top level domain expansion
-## OUTPUT:
 
 
 
@@ -67,7 +69,8 @@ Top level domain expansion
 
 
 
-##dnsenum
+
+## dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
 
 Get the host’s addresses (A record).
@@ -82,7 +85,7 @@ Write to domain_ips.txt file ip-blocks.
 This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
 
 
-##smtp-user-enum
+## smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
 
 
@@ -91,21 +94,94 @@ In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
 select any username in the first column of the above file and check the same
 
 
-#Telnet for smtp enumeration
+# Telnet for smtp enumeration
 Telnet allows to connect to remote host based on the port no. For smtp port no is 25
 telnet <host address> 25 to connect
 and issue appropriate commands
   
- ##Output
+ 
   
   
 
-## nmap –script smtp-enum-users.nse <hostname>
+# nmap –script smtp-enum-users.nse <hostname>
 
 The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server by issuing the VRFY, EXPN or RCPT TO commands. The goal of this script is to discover all the user accounts in the remote system.
 
 
 ## OUTPUT:
+## site:
+![Screenshot 2025-03-14 133834](https://github.com/user-attachments/assets/9022d1b6-c168-4096-8bdd-c5451454b95f)
+
+
+
+## filetype:
+![Screenshot 2025-03-14 133910](https://github.com/user-attachments/assets/246aff14-f450-4c23-b923-1ee14e68eb14)
+
+
+
+
+
+## intext:
+![Screenshot 2025-03-14 134000](https://github.com/user-attachments/assets/bb77e073-7920-4359-aa3f-ca091f90c51c)
+
+
+
+
+
+## inurl:
+
+![Screenshot 2025-03-14 092829](https://github.com/user-attachments/assets/6afa5203-b6c8-47a3-bf9d-fbce5335b000)
+
+
+## intitle:
+![Screenshot 2025-03-14 093043](https://github.com/user-attachments/assets/2afe834b-af95-4f53-b057-38fcec9f5356)
+
+
+
+
+## link:
+![Screenshot 2025-03-14 134029](https://github.com/user-attachments/assets/a3fcc714-3b7f-417b-98e9-8572ce41d8a2)
+
+
+
+
+
+## cache:
+
+![{CE751739-2C28-4363-9D75-926D8EA4F27E}](https://github.com/user-attachments/assets/900e84da-7343-448e-a6ca-dc44ed9a6e2e)
+
+
+## DNS Enumeration:
+## DNS Recon:
+![Screenshot 2025-03-14 141927](https://github.com/user-attachments/assets/e156c225-eb82-4e7f-bdb2-96f676e8e682)
+
+
+## dnsenum:
+
+![Screenshot 2025-03-14 221210](https://github.com/user-attachments/assets/b0977f5f-d412-4243-bdf5-d2e9c2df4145)
+
+
+![Screenshot 2025-03-14 221651](https://github.com/user-attachments/assets/34307e76-e1bd-431e-9fc7-236cfc1e3876)
+
+
+
+
+## smtp-user-enum:
+
+![Screenshot 2025-03-14 221850](https://github.com/user-attachments/assets/498428b2-8796-448e-9db5-cd68a36fb46b)
+
+![Screenshot 2025-03-14 222118](https://github.com/user-attachments/assets/8e03be64-b85f-44c5-94db-3714b66828d1)
+
+## telnet:
+![Screenshot 2025-03-14 222519](https://github.com/user-attachments/assets/e28dd1c8-0479-4841-94a1-76e77fbbfc27)
+
+
+
+## nmap –script smtp-enum-users.nse :
+
+![Screenshot 2025-03-14 222659](https://github.com/user-attachments/assets/9e0ed808-9055-43b0-8273-ff30b4b5cac2)
+
+
 
 
 ## RESULT:
